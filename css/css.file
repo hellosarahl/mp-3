@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+
+header, footer{
+    background-color:wheat;
+    
+}
+
+#page-wrapper{
+    width:80vw;
+    margin:0 auto;
+
+}
+
+nav{
+    background-color:white;
+    padding:5px;
+    width:30%;
+}
+
+nav a{
+    text-decoration:none;
+    font-size: calc(2px+2vw);
+}
+
+nav li{
+    border:3px solid black;
+
+}
+
+nav ul{
+    text-align: center;
+    padding-left:0;
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    width: 80%;
+    margin:0 auto;
+}
+main{
+    min-height:100vh;
+    width:70%;
+    background-color:#B0C4DE;
+}
+
+#container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+
+/*believe this line mobile design*/
+@media screen and (max-width:1000px){
+    #container{
+        flex-direction:column;
+    
+}
+
+nav{
+    width:100%;
+}
+
+main{
+    width:100%;
+
+}
+nav ul{
+    flex-direction:row;
+    justify-content:center;
+}
+}
